@@ -1,0 +1,27 @@
+﻿
+<html ng-app="app">
+<head>
+    <link rel="stylesheet" type="text/css" href="app/styles.css">
+    <title>Inducta angular</title>
+    
+</head>
+<body ng-controller="Main as vm">
+
+    <input type="text" ng-model="vm.cttrVar" placeholder="type names with commas" />
+    <button ng-click="vm.kita()">
+    	<!-- add something nice here-->
+        
+    </button>
+    <p>u know  {{vm.cttrVar ? vm.cttrVar+'?' : 'nothing?'}}</p>
+    <!--<textarea ng-model="vm.jsonVar" ng-list="&#10;" ng-trim="true"></textarea>-->
+    
+   <!--komentar skripte-->
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/main.js"></script>
+
+    
+</body>
+</html>
