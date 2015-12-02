@@ -15,9 +15,13 @@
         }
 
         vm.imHungry = function () {
-            vm.cttrVar === 'plzs' ? console.log('hasha je servirana: ' + (vm.cttrVar)) : window.alert('sayplz');
+            vm.cttrVar === 'plzs' ? console.log('hasha je servirana: ' + 'look for the red button') : window.alert('sayplz');
         }
 
+        //learn routing
+        vm.wantMore = function () {
+           //something for nothing
+        }
         //vm.kita = lista.a;
         //put kasha here
 
