@@ -8,21 +8,18 @@
     function main() {
         var vm = this;
         var lista = {};
-
-        lista.a = function () {
-            console.log('kita radi');
+        vm.cttrVar = null;
+        vm.kita = function () {
+            vm.cttrVar=='plzs' ? console.log('hasha je servirana: '+(vm.cttrVar)) : window.alert('sayplz');
+            
         }
 
-        vm.kita = lista.a;
-
-
-        vm.cttrVar ="nothing?";
-        //vm.jsonVar = vm.cttrVar
-        //vm.cttrVar = zHashString(jsonVar)
+        //vm.kita = lista.a;
+        //put kasha here
+        
     }
 
-    function zHashString(string) {
-        return string.join(',',string)
-    }
+    
+    
 
 })();
