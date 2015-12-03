@@ -9,27 +9,19 @@
         var vm = this;
         var lista = {};
         vm.cttrVar = null;
-        vm.kungfu = function () {
-            vm.cttrVar === 'plzs' ? console.log('hasha je servirana: ' + 'v=0p_1QSUsbsM') : window.alert('sayplz');
-            
-        }
+        
 
         vm.imHungry = function () {
-            vm.cttrVar === 'plzs' ? console.log('hasha je servirana: ' + 'look for the red button') : window.alert('sayplz');
+            vm.cttrVar === 'plzs' ? console.log('hasha is served: ' + 'look for the red button') : window.alert('sayplz');
         }
 
         //learn routing
         vm.wantMore = function () {
-           //something for nothing
+            //something for nothing
+
         }
         //vm.kita = lista.a;
-        //put kasha here
-
-        
-        
+        //put kasha here     
     }
-
-    
-    
-
+ 
 })();

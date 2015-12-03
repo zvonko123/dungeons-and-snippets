@@ -5,26 +5,33 @@
     <title>Inducta angular</title>
     
 </head>
-<body ng-controller="Main as vm">
-
-    <input type="text" ng-model="vm.cttrVar" placeholder="kung fu ?" />
-    <button ng-click="vm.kungfu()">
-    	<!-- add something nice here-->
-        
+<body>
+<!-- ovo je alias ng-controller ="Main as vm" -->
+    <div class="container" ng-controller="Hidden">
+        <input type="text" ng-model="vm.food" placeholder="kung fu ?" />
+            <button ng-click="vm.kungfu()">
+<!-- add something nice here-->
     </button>
-    <p>u know  {{vm.cttrVar ? vm.cttrVar+'?' : 'nothing?'}}</p>
+    </div>   
+        <p>u know  {{kasha.food ? kasha.food+'?' : 'nothing?'}}</p>
     <!--<textarea ng-model="vm.jsonVar" ng-list="&#10;" ng-trim="true"></textarea>-->
-    <button ng-class="mk"ng-click="vm.imHungry()">
-    	<!-- add something nice here-->
         
-    </button>
-   <!--komentar skripte-->
-     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    
+
+    <div class="container" ng-controller="Main">
+        <button ng-class="mk" ng-click="vm.imHungry()">
+<!-- add something nice here-->
+        </button>
+    </div>
+    
+    
+    <!--komentar skripte-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js" type="text/javascript"></script>
     <script src="Scripts/angular.min.js"></script>
     <script src="app/app.module.js"></script>
     <script src="app/main.js"></script>
 
-    
+
 </body>
 </html>
