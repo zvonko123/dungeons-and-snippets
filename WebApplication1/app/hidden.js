@@ -5,17 +5,20 @@
         .module('app')
         .controller('Hidden', hidden);
 
-    function hidden($scope) {
+    function hidden() {
    //award the player
-    $scope.food = null;
+        var vm = this;
+        vm.food = null
 
-    $scope.kungfu = function () {
+
+   
+    vm.kungfu = function () {
         $scope.food === 'plzs' ? console.log('hasha is served: ' + 'v=0p_1QSUsbsM') : window.alert('sayplz');
             
     }
 
-    $scope.imHungry = function () {
-        $scope.food === 'plzs' ? console.log('hasha is served: ' + '(levelup)') : window.alert('sayplz');
+    vm.imHungry = function () {
+        $scope.food === 'plzs' ? console.log('Gratz: ' + '(ding)') : window.alert('sayplz');
     }
 }
 

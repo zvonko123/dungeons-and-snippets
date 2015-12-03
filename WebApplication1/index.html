@@ -7,23 +7,23 @@
 </head>
 <body>
     <!-- ovo je alias ng-controller ="Main as vm" -->
-    <div class="container" ng-controller="Hidden">
-        <input type="text" ng-model="food" placeholder="kung fu ?" />
-            <button ng-click="kungfu()">
-    <!-- add something nice here-->
-    </button>
-    </div>   
-       
-    <!--<textarea ng-model="vm.jsonVar" ng-list="&#10;" ng-trim="true"></textarea>-->
-     
-    
+    <div class="container" ng-controller="Hidden as vm">
+        <input type="text" placeholder="kung fu ?" />
+        <button ng-click="vm.kungfu()">
+            <!-- add something nice here-->
+        </button>
 
-    <div ng-controller="Main">
-        <label>u know</label><br>
-          <p ng-bind="food">{{food ? food+'?' : 'nothing?'}}</p>!
-    </div>
-        
-        <button ng-class="mk" ng-click="imHungry()">
+
+        <!--<textarea ng-model="vm.jsonVar" ng-list="&#10;" ng-trim="true"></textarea>-->
+
+
+
+        <div ng-controller="Hidden">
+            u know
+            {{vm.food ? vm.food+'?' : 'nothing?'}} !
+        </div>
+    </div> 
+        <button ng-controller="Main as vm" ng-click="vm.wantMore()">
     <!--add something nice here-->
         </button>
     </div>

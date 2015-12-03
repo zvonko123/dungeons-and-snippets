@@ -9,11 +9,12 @@
     function main($scope) {
        
         var lista = {}; // lista levela s opisima T0d0
-
+        var vm = this;
         //learn routing
         //this function is used for leveling up
-        $scope.wantMore = function () {
+        $vm.wantMore = function () {
             //something for nothing
+            console.log("y so serius?")
 
         }
          
