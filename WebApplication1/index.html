@@ -13,14 +13,18 @@
     <!-- add something nice here-->
     </button>
     </div>   
-        <p>u know  {{kasha.food ? kasha.food+'?' : 'nothing?'}}</p>
+       
     <!--<textarea ng-model="vm.jsonVar" ng-list="&#10;" ng-trim="true"></textarea>-->
-        
+     
     
 
-    <div class="container" ng-controller="Main">
+    <div ng-controller="Main">
+        <label>u know</label><br>
+          <p ng-bind="food">{{food ? food+'?' : 'nothing?'}}</p>!
+    </div>
+        
         <button ng-class="mk" ng-click="imHungry()">
- <!--add something nice here-->
+    <!--add something nice here-->
         </button>
     </div>
     

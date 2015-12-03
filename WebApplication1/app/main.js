@@ -4,24 +4,19 @@
     angular
         .module('app')
         .controller('Main', main);
-
-    function main() {
-        var vm = this;
-        var lista = {};
-        vm.cttrVar = null;
-        
-
-        vm.imHungry = function () {
-            vm.cttrVar === 'plzs' ? console.log('hasha is served: ' + 'look for the red button') : window.alert('sayplz');
-        }
+    //controller used for proceeding with level
+    //T0D0 add rewards
+    function main($scope) {
+       
+        var lista = {}; // lista levela s opisima T0d0
 
         //learn routing
-        vm.wantMore = function () {
+        //this function is used for leveling up
+        $scope.wantMore = function () {
             //something for nothing
 
         }
-        //vm.kita = lista.a;
-        //put kasha here     
+         
     }
  
 })();
