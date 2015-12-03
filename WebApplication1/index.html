@@ -6,20 +6,24 @@
     
 </head>
 <body>
-    <div class="container" ng-controller="Hidden as vm"> <!-- alias referencira scope -->
-        <input type="text" placeholder="kung fu ?" />
+    <div ng-controller="Hidden as vm" >
+        <input ng-model="vm.food" type="text" placeholder="kung fu ?" />
         <button ng-click="vm.kungfu()">
             <!-- add something nice here-->
         </button>
 
-    <div>
+
+        <!--<textarea ng-model="vm.jsonVar" ng-list="&#10;" ng-trim="true"></textarea>-->
+        <!-- Stashed changes bugspray-->
+
+        <div >
             u know
             {{vm.food ? vm.food+'?' : 'nothing?'}} !
         </div>
-    </div> 
-        <button ng-controller="Main as vm" ng-click="vm.wantMore()">
-    <!--add something nice here-->
-        </button>
+    </div>
+    <button ng-controller="Main as vm" ng-click="vm.wantMore()">
+        <!--add something nice here-->
+    </button>
     </div>
     
     
