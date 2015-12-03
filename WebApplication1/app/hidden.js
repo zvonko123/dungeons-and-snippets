@@ -3,10 +3,10 @@
 
     angular
         .module('app')
-        .controller('Kasha', hidden);
+        .controller('Hidden', hidden);
 
-    function hidden() {
-    var vm = this;
+    function hidden($scope) {
+   
 
     $scope.kungfu = function () {
         $scope.food === 'plzs' ? console.log('hasha is served: ' + 'v=0p_1QSUsbsM') : window.alert('sayplz');

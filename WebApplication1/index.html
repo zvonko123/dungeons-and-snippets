@@ -6,11 +6,11 @@
     
 </head>
 <body>
-<!-- ovo je alias ng-controller ="Main as vm" -->
+    <!-- ovo je alias ng-controller ="Main as vm" -->
     <div class="container" ng-controller="Hidden">
-        <input type="text" ng-model="vm.food" placeholder="kung fu ?" />
-            <button ng-click="vm.kungfu()">
-<!-- add something nice here-->
+        <input type="text" ng-model="food" placeholder="kung fu ?" />
+            <button ng-click="kungfu()">
+    <!-- add something nice here-->
     </button>
     </div>   
         <p>u know  {{kasha.food ? kasha.food+'?' : 'nothing?'}}</p>
@@ -19,8 +19,8 @@
     
 
     <div class="container" ng-controller="Main">
-        <button ng-class="mk" ng-click="vm.imHungry()">
-<!-- add something nice here-->
+        <button ng-class="mk" ng-click="imHungry()">
+ <!--add something nice here-->
         </button>
     </div>
     
@@ -31,6 +31,7 @@
     <script src="Scripts/angular.min.js"></script>
     <script src="app/app.module.js"></script>
     <script src="app/main.js"></script>
+    <script src="app/hidden.js"></script>
 
 
 </body>
